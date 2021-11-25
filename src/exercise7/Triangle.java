@@ -17,6 +17,10 @@ public class Triangle {
     }
 
     public static void printLine(int start, int end) {
-        // Implement method
+        for (int i = start; i <= end; i++) {
+            System.out.print(i);
+
+        }
     }
 }
+
