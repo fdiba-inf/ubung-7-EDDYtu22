@@ -14,10 +14,9 @@ public class RecursivePrimePrinter {
 
     public static void printPrimes(int n) {
 
-        for (int i = n - 1; i >= 1; i--){
+        for (int i = n; i >= 1; i--){
              if (isPrime(i)) {
-                 int number = i;
-                 System.out.println(number);
+                 System.out.println(i);
              }
 
          }
@@ -27,7 +26,10 @@ public class RecursivePrimePrinter {
         boolean flag = true;
         int i = 2;
         while (i < n) {
-            if (n % i == 0) flag = false;
+            if (n % i == 0) {
+                flag = false;
+                break;
+            }
             i++;
         }
         return flag;
