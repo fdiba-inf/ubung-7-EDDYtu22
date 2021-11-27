@@ -14,7 +14,7 @@ public class Triangle {
         }
 
         for (int line = n-1; line >= 1; line--) {
-            printLine(1, line - 1 );
+            printLine(1, line );
         }
 
     }
